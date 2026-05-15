@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Blood Donation Camps</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-heartbeat" style="color: #e74c3c; font-size: 28px;"></i>
+                <div class="logo-text"><span>&nbsp;LifeLink Blood Donation</span></div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="search-container">
+            <label for="pincode">Enter Pincode:</label>
+            <input type="text" id="pincode" placeholder="Enter your pincode">
+            <button onclick="searchCamps()">Search</button>
+        </div>
+
+        <div id="camp-results"></div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+[22-Feb-2025 06:36:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in C:\xampp\htdocs\Blood-Donation-App\search_blood.php:46
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Blood-Donation-App\search_blood.php on line 46
+[22-Feb-2025 06:36:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in C:\xampp\htdocs\Blood-Donation-App\search_blood.php:46
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Blood-Donation-App\search_blood.php on line 46

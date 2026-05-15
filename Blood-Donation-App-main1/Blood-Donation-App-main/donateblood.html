@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifeline Blood Donation - Appointment Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-heartbeat" style="color: #e74c3c; font-size: 28px;"></i>
+                <div class="logo-text"><span>&nbsp;LifeLink Blood Donation</span></div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="form-container">
+            <h2 class="form-title">Blood Donation Appointment</h2>
+            
+            <form id="appointmentForm">
+                <div class="form-section">
+                    <div class="section-title">
+                        <span class="section-icon">👤</span>
+                        <h3>Personal Information</h3>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name*</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dateOfBirth">Date of Birth*</label>
+                            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gender">Gender*</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select...</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pincode">Pincode*</label>
+                            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" maxlength="6" required>
+                            <small class="helper-text">Enter 6-digit pincode</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <div class="section-title">
+                        <span class="section-icon">🩸</span>
+                        <h3>Blood Donation Information</h3>
+                    </div>
+                    
+                    <div class="requirements-list">
+                        <h4>Eligibility Requirements:</h4>
+                        <ul>
+                            <li>Must be at least 18 years old</li>
+                            <li>Must weigh at least 110 pounds</li>
+                            <li>Must be in good health</li>
+                            <li>No fever or illness symptoms</li>
+                            <li>No tattoos or piercings in the last 3 months</li>
+                            <li>No blood donations in the last 56 days</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bloodType">Blood Type (if known)</label>
+                            <select id="bloodType" name="bloodType">
+                                <option value="">Select...</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="unknown">I don't know</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Previous Blood Donor?*</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="previousYes" name="previousDonor" value="yes" required>
+                                    <label for="previousYes">Yes</label>
+                                </div>
+                                
+                                <div class="radio-option">
+                                    <input type="radio" id="previousNo" name="previousDonor" value="no">
+                                    <label for="previousNo">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="lastDonationDate">Last Donation Date (if applicable)</label>
+                            <input type="date" id="lastDonationDate" name="lastDonationDate">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weight">Weight (pounds)*</label>
+                            <input type="number" id="weight" name="weight" min="0" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <div class="section-title">
+                        <span class="section-icon">📅</span>
+                        <h3>Appointment Details</h3>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="donationCenter">Donation Center*</label>
+                            <select id="donationCenter" name="donationCenter" required>
+                                <option value="">Select a location...</option>
+                                <option value="huzarabad">Huzarabad Hospital</option>
+                                <option value="karimnagar-govt">Karimnagar Govt. Hospital</option>
+                                <option value="kits-singapur">KITS Singapur Blood Camp</option>
+                                <option value="sunrise-karimnagar">Sunrise Hospital Karimnagar</option>
+                                <option value="mobile">Mobile Blood Drive</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="appointmentDate">Preferred Date*</label>
+                            <input type="date" id="appointmentDate" name="appointmentDate" required>
+                        </div>
+                    </div>
+                    
+                    <div class="appointment-time">
+                        <h4>Available Time Slots</h4>
+                        <div class="time-slots">
+                            <div class="time-slot" data-time="09:00">9:00 AM</div>
+                            <div class="time-slot" data-time="10:00">10:00 AM</div>
+                            <div class="time-slot" data-time="11:00">11:00 AM</div>
+                            <div class="time-slot" data-time="12:00">12:00 PM</div>
+                            <div class="time-slot" data-time="13:00">1:00 PM</div>
+                            <div class="time-slot" data-time="14:00">2:00 PM</div>
+                            <div class="time-slot" data-time="15:00">3:00 PM</div>
+                            <div class="time-slot" data-time="16:00">4:00 PM</div>
+                            <div class="time-slot" data-time="17:00">5:00 PM</div>
+                        </div>
+                        <input type="hidden" id="selectedTime" name="selectedTime">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="donationType">Donation Type*</label>
+                            <select id="donationType" name="donationType" required>
+                                <option value="">Select...</option>
+                                <option value="whole">Whole Blood Donation</option>
+                                <option value="plasma">Plasma Donation</option>
+                                <option value="platelets">Platelets Donation</option>
+                                <option value="double-red">Double Red Cell Donation</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <div class="section-title">
+                        <span class="section-icon">🩺</span>
+                        <h3>Health Screening</h3>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label>In the past 6 weeks, have you:*</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="recentIllness" name="healthCheck" value="recentIllness">
+                                    <label for="recentIllness">Had a cold, flu, or other illness</label>
+                                </div>
+                                
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="recentSurgery" name="healthCheck" value="recentSurgery">
+                                    <label for="recentSurgery">Had any surgical procedures</label>
+                                </div>
+                                
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="recentVaccination" name="healthCheck" value="recentVaccination">
+                                    <label for="recentVaccination">Received any vaccinations</label>
+                                </div>
+                                
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="recentTattoo" name="healthCheck" value="recentTattoo">
+                                    <label for="recentTattoo">Got a tattoo or piercing</label>
+                                </div>
+                                
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="recentTravel" name="healthCheck" value="recentTravel">
+                                    <label for="recentTravel">Traveled outside the country</label>
+                                </div>
+                                
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="noHealthIssues" name="healthCheck" value="noHealthIssues">
+                                    <label for="noHealthIssues">None of the above</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="medications">Current Medications (if any)</label>
+                            <textarea id="medications" name="medications" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <div class="section-title">
+                        <span class="section-icon">📝</span>
+                        <h3>Consent</h3>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="consentCheck" name="consent" required>
+                            <label for="consentCheck">I confirm that the information provided is accurate and complete. I understand that I will need to complete a full health questionnaire upon arrival for my donation appointment.*</label>
+                        </div>
+                        
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="privacyCheck" name="privacyConsent" required>
+                            <label for="privacyCheck">I agree to the privacy policy and consent to Lifeline Blood Donation collecting, storing, and processing my personal information for the purpose of blood donation.*</label>
+                        </div>
+                        
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="communicationCheck" name="communicationConsent">
+                            <label for="communicationCheck">I would like to receive notifications about future blood donation drives and important updates.</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline" id="resetBtn">Reset Form</button>
+                    <button type="submit" class="btn" id="submitBtn">Schedule Appointment</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

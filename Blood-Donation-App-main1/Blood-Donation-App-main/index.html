@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeLink - Blood Donation Platform</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <i class="fas fa-heartbeat" style="color: #e74c3c; font-size: 28px;"></i>
+            <h1>LifeLink</h1>
+          </div>
+          <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#eligibility">Eligibility</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+            <a href="#about-us">About</a>
+          </div>
+          <div class="cta-buttons">
+            <a href="./needblood.html" class="btn btn-outline" id="need-blood-btn"
+              >Need Blood</a
+            >
+            <a href="./donateblood.html" class="btn btn-primary" id="donate-blood-btn"
+              >Donate Blood</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main content sections -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="container">
+          <h2>Every Drop Counts, Every Life Matters</h2>
+          <p>
+            Connect with blood donors in real-time during emergencies. Our platform brings
+            together those who need blood and those who can donate to save lives.
+          </p>
+          <div class="hero-buttons">
+            <a href="urgent.html" class="btn btn-primary">Urgent Blood Request</a>
+            <a href="./find_camps.html" class="btn btn-outline">Find Donation Camps</a>
+          </div>
+        </div>
+        <div class="hero-image"></div>
+      </section>
+
+      <!-- Pre-Reading Section -->
+      <section class="pre-reading" id="about">
+        <div class="container">
+          <h2>Complete Your Pre-Reading Online</h2>
+          <p>
+            Donating blood today? Complete your pre-reading and health history questions
+            online using any device, before visiting your blood drive location. Save time and help
+            us serve more donors efficiently.
+          </p>
+          <a href="pre-reading.html" class="btn btn-primary">Start Pre-Reading</a>
+        </div>
+      </section>
+
+      <!-- Blood Flow Chart -->
+      <section class="flow-chart">
+        <div class="container">
+          <h2>How Blood Donation Works</h2>
+          <div class="chart-container">
+            <div style="text-align: center;">
+              <img
+                src="./images/WhatsApp Image 2025-02-20 at 14.10.45_7fc92717.jpg"
+                alt="Blood donation flow chart"
+                style="max-width: 100%; border-radius: 10px;"
+              />
+            </div>
+            <div style="margin-top: 30px;">
+              <h3>The Journey of Your Donation</h3>
+              <p>
+                When you donate blood, your contribution goes through several important steps before
+                reaching a patient in need:
+              </p>
+              <ol style="margin-left: 20px; margin-top: 15px;">
+                <li>
+                  <strong>Registration & Screening</strong> - Your vital signs are checked and eligibility
+                  confirmed
+                </li>
+                <li>
+                  <strong>Donation</strong> - The actual donation takes only 8-10 minutes
+                </li>
+                <li>
+                  <strong>Processing & Testing</strong> - Your donation is tested for blood type and infectious
+                  diseases
+                </li>
+                <li>
+                  <strong>Storage</strong> - Blood components are stored at specific temperatures
+                </li>
+                <li>
+                  <strong>Distribution</strong> - Your blood is sent to hospitals where it's needed most
+                </li>
+                <li>
+                  <strong>Transfusion</strong> - Your donation saves lives by reaching patients in emergency
+                  situations
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blood Compatibility Table -->
+      <section class="compatibility">
+        <div class="container">
+          <h2>Blood Type Compatibility Chart</h2>
+          <table class="compatibility-table">
+            <thead>
+              <tr>
+                <th>Blood Type</th>
+                <th>Can Donate To</th>
+                <th>Can Receive From</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A+</td>
+                <td>A+, AB+</td>
+                <td>A+, A-, O+, O-</td>
+              </tr>
+              <tr>
+                <td>A-</td>
+                <td>A+, A-, AB+, AB-</td>
+                <td>A-, O-</td>
+              </tr>
+              <tr>
+                <td>B+</td>
+                <td>B+, AB+</td>
+                <td>B+, B-, O+, O-</td>
+              </tr>
+              <tr>
+                <td>B-</td>
+                <td>B+, B-, AB+, AB-</td>
+                <td>B-, O-</td>
+              </tr>
+              <tr>
+                <td>AB+</td>
+                <td>AB+ only</td>
+                <td>All blood types</td>
+              </tr>
+              <tr>
+                <td>AB-</td>
+                <td>AB+, AB-</td>
+                <td>A-, B-, AB-, O-</td>
+              </tr>
+              <tr>
+                <td>O+</td>
+                <td>A+, B+, AB+, O+</td>
+                <td>O+, O-</td>
+              </tr>
+              <tr>
+                <td>O-</td>
+                <td>All blood types</td>
+                <td>O- only</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features">
+        <div class="container">
+          <h2>Our Platform Features</h2>
+          <div class="feature-grid">
+            <div class="feature-box">
+              <i class="fas fa-medal"></i>
+              <h3>Donor Recognition</h3>
+              <p>
+                Earn badges and recognition for your life-saving donations and volunteer work.
+              </p>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-calendar-alt"></i>
+              <h3>Appointment Booking</h3>
+              <p>
+                Schedule your donation appointments with ease and get reminders.
+              </p>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-hands-helping"></i>
+              <h3>Volunteer Management</h3>
+              <p>
+                Register as a volunteer for blood donation camps and community events.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Eligibility Section -->
+      <section class="eligibility" id="eligibility">
+        <div class="container">
+          <h2>Blood Donation Eligibility</h2>
+          <div class="eligibility-grid">
+            <div class="eligibility-card">
+              <h3>General Requirements</h3>
+              <ul class="eligibility-list">
+                <li>Age between 18-65 years</li>
+                <li>Weight above 45 kg</li>
+                <li>Hemoglobin count above 12.5 g/dl</li>
+                <li>Normal blood pressure</li>
+                <li>Last donation was more than 3 months ago</li>
+              </ul>
+            </div>
+            <div class="eligibility-card">
+              <h3>You Can Donate If You</h3>
+              <ul class="eligibility-list">
+                <li>Are in good health</li>
+                <li>Had a good night's sleep</li>
+                <li>Had a meal within last 4 hours</li>
+                <li>Have not had any recent surgeries</li>
+                <li>Have no active medical conditions</li>
+              </ul>
+            </div>
+            <div class="eligibility-card">
+              <h3>You Cannot Donate If You</h3>
+              <ul class="eligibility-list not-eligible">
+                <li>Have a cold, flu, or fever</li>
+                <li>Are pregnant or recently gave birth</li>
+                <li>Have certain medical conditions</li>
+                <li>Had recent major surgery</li>
+                <li>Are taking certain medications</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq" id="faq">
+        <div class="container">
+          <h2>Frequently Asked Questions</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">
+                Am I Eligible to Donate Blood?
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  General requirements include being in good health, at least 18 years old (16-17 with parental consent in some areas), weighing at least 110 pounds, and not having donated in the last 56 days. Certain medical conditions, medications, travel history, and recent tattoos or piercings may affect eligibility. Our pre-screening form will help determine your eligibility.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                How Often Can I Donate Blood?
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  Whole blood donors can donate every 56 days (about 8 weeks). Platelet donors can donate every 7 days up to 24 times per year. Plasma donors can donate every 28 days. Double red cell donors can donate every 112 days (about 16 weeks).
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                How Long Does the Donation Process Take?
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  The entire process takes about one hour from the time you arrive until the time you leave. The actual blood donation only takes about 8-10 minutes. The rest of the time is spent on registration, health history review, and a brief physical examination.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                What Should I Do Before and After Donating?
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  Before donating: Eat a healthy meal, drink plenty of water, and get adequate rest. After donating: Drink extra fluids, avoid strenuous physical activity for 24 hours, and keep the bandage on for several hours. If you feel dizzy, lie down with your feet elevated until the feeling passes.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                How Do I Request Blood in an Emergency?
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  For emergencies, use our "Urgent Blood Request" feature. Enter the patient's location, blood type, and quantity needed. Our system will immediately notify compatible donors in the vicinity and connect you with nearby blood banks that have availability. Medical professionals can also initiate requests through our verified healthcare provider portal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <div class="contact-grid">
+            <div class="contact-form">
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+            <div class="contact-info">
+              <h3>Get in Touch</h3>
+              <p><i class="fas fa-phone"></i> +1234567890</p>
+              <p><i class="fas fa-envelope"></i> contact@lifelink.com</p>
+              <p><i class="fas fa-map-marker-alt"></i> Karimnagar, Telangana, India</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-team" id="about-us">
+        <div class="container">
+          <h2>Meet Our Team</h2>
+          <p class="section-desc">
+            We are a passionate team of developers dedicated to making blood donation easier and more accessible.
+          </p>
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="member-img">
+              </div>
+              <h3>Pranavi Aluguri</h3>
+              <p>Frontend Developer</p>
+              <p>Pranavi brings designs to life with her expertise in frontend frameworks. She focuses on creating responsive and visually appealing interfaces.</p>
+              <div class="social-links">
+                <a href="https://github.com/PranaviAluguri" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="http://www.linkedin.com/in/aluguri-pranavi-ab8405349" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="member-img">
+              </div>
+              <h3>Hrushikesh Narla</h3>
+              <p>Fullstack Developer</p>
+              <p>Hrushikesh skilled in both frontend and backend technologies, delivering seamless web solutions. he is passionate about creating dynamic and user-friendly applications.</p>
+              <div class="social-links">
+                <a href="https://github.com/Hrushikesh-Narala" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/narala-hrushikesh-9ba85a352" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="member-img">
+
+              </div>
+              <h3>Ramya Sudhagoni</h3>
+              <p>Backend Developer</p>
+              <p>Ramya specializes in server-side logic and database management. she ensures robust and efficient backend architecture for our projects.</p>
+              <div class="social-links">
+                <a href="https://github.com/ramyasudhagoni" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="http://www.linkedin.com/in/ramya-sudhagoni-1a3875352" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="member-img">
+              </div>
+              <h3>Sriram Sistla</h3>
+              <p>UI/UX Designer</p>
+              <p>Sriram designs intuitive and engaging user experiences. He blends creativity with functionality to enhance user interaction.</p>
+              <div class="social-links">
+                <a href="https://github.com/sistlasriram" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sriram-sistla-466563352/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
